@@ -1,0 +1,19 @@
+{
+    "name": "pdewit/telegram-logger",
+    "description": "Quick way to log events to Telegram",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patrick de Wit",
+            "email": "patrick1193@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "^5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    }
+}
