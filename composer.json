@@ -1,31 +1,35 @@
 {
-    "name": "pdewit/telegram-logger",
-    "description": "Quick way to log events to Telegram",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Patrick de Wit",
-            "email": "patrick1193@gmail.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Pdewit\\TelegramLogger\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Pdewit\\TelegramLogger\\Tests\\": "tests"
-        }
-    },
-    "minimum-stability": "dev",
-    "require": {
-        "illuminate/support": "^5.3",
-        "unreal4u/telegram-api": "^2.2"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^5.7",
-        "orchestra/testbench": "~3.0"
+  "name": "pdewit/telegram-logger",
+  "description": "Quick way to log events to Telegram",
+  "type": "library",
+  "license": "MIT",
+  "version": "0.1",
+  "authors": [
+    {
+      "name": "Patrick de Wit",
+      "email": "patrick1193@gmail.com"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Pdewit\\TelegramLogger\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Pdewit\\TelegramLogger\\Tests\\": "tests"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "illuminate/support": "^5.3",
+    "unreal4u/telegram-api": "^2.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7",
+    "orchestra/testbench": "~3.0"
+  }
 }

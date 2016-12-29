@@ -17,7 +17,7 @@
     </testsuites>
 
     <php>
-        <env name="TELEGRAM_BOT_TOKEN" value="1234"/>
-        <env name="TELEGRAM_CHAT_ID" value="1234"/>
+        <env name="TELEGRAM_BOT_TOKEN" value="277196469:AAFXY1X3iIRA4pizPoDX85AhpRPq6Kj5ECI"/>
+        <env name="TELEGRAM_CHAT_ID" value="5133794"/>
     </php>
 </phpunit>
