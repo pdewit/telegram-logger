@@ -52,11 +52,13 @@ class TelegramLogger
 
     /**
      * @param $text
-     * @param null $chatId
+     * @param int|null $chatId
      * @return \unreal4u\TelegramAPI\Abstracts\TelegramTypes
      */
     public function sendMessage($text, $chatId = null)
     {
+        if(!config('telegram.enabled')) return false;
+
         if($chatId == null){
             $chatId = $this->chatId;
         }
@@ -66,7 +68,11 @@ class TelegramLogger
         $message->text = $text;
 
 
-        return $this->telegram->performApiRequest($message);
+        try {
+            return $this->telegram->performApiRequest($message);
+        }catch(\Exception $e){
+            return null;
+        }
     }
 
 }
