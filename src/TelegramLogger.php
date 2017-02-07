@@ -39,6 +39,8 @@ class TelegramLogger
      */
     private function setUp()
     {
+        if(!config('telegram.enabled')) return false;
+
         if($this->token == ''){
             throw new TelegramException('Telegram Token not set in config files.');
         }

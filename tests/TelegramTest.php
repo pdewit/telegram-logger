@@ -27,6 +27,7 @@ class TelegramTest extends TestCase
     public function testDisablingInConfig()
     {
         Config::set('telegram.enabled', false);
+        Config::set('telegram.token', '');
 
         $response = app()->make(TelegramLogger::class)->sendMessage('test');
 
